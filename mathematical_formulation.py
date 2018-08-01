@@ -197,8 +197,11 @@ class portfolio():
 
     def quard_obj(self,qmat):
         
-        
-        self.c.objective.set_quadratic(qmat)
+        sqmat = [
+           cplex.SparsePair(ind=[i for (i,v) in zip(row[0],row[1]) if v != 0], val=[v for (i,v) in zip(row[0],row[1]) if v != 0])
+           for row in qmat
+        ]
+        self.c.objective.set_quadratic(sqmat)
 
         
 
