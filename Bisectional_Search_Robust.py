@@ -406,16 +406,13 @@ class informs:
             acnum += 1
             
         dist = 1
-        print(TE/self.omegamulti*100)
-        w_upsum2 = 1.0 - (TE[0]/self.omegamulti*100)
-        print(w_upsum2)
+        w_upsum2 = 1.0 
         Feasible_check = 0
         final_result_dic = []
         
 
 
         while (end):
-            #print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!bysta")
             if dist < end_cond:
       
                 if len(final_result_dic) == 0:
