@@ -320,7 +320,7 @@ class informs:
             
         dist = 1
 
-        w_upsum2 = 1.0 - (TE[0]/self.omegamulti*100)
+        w_upsum2 = 1.0 
 
         Feasible_check = 0
         final_result_dic = []
